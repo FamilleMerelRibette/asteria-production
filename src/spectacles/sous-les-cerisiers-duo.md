@@ -3,9 +3,10 @@ titre: Sous les cerisiers
 slug: slc
 draft: false
 affiche: media/slc-duo.jpg
-youtube: https://www.youtube.com/embed/VPDSr20g28M?si=pwHfutmMw320RHj8
-_soundcloud: https://api.soundcloud.com/playlists/2083344321
-instagram: 
+youtubes: 
+  - https://www.youtube.com/embed/VPDSr20g28M?si=pwHfutmMw320RHj8
+  - https://www.youtube.com/embed/Gqhz8mndWt0?si=w5ovnLBoPU2ElIrm
+instagram: sous.les.cerisiers
 type: 20 ans d'amour - duo
 repertoire: Jazz des années 30 à 50
 contact: slc.duoacoustique@gmail.com
