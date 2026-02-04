@@ -14,7 +14,7 @@ formation: |
     Duo: Guitare & voix
 interpretes: |
     Yann Ravet à la guitare
-    Sonia ribette au chant
+    Sonia Ribette au chant
 agenda:
     - date: 13/12/25
       lieu: Parempuyre (33)
