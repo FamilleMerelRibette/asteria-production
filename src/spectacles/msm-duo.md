@@ -6,10 +6,11 @@ affiche: media/msm-2025-duo.jpg
 youtube: https://www.youtube.com/embed/IEgHJbD8ymE?si=FceYHIXp4NZa7AWS
 soundcloud: https://soundcloud.com/soniaribette/teaser-sonia-yann-2025-mp3
 _soundcloud: https://api.soundcloud.com/playlists/1530807106
-type: concert théâtralisé - duo guitare voix
-repertoire: standard des années 70
+type: concert théâtralisé interactif - en solo ou duo
+_repertoire: standard des années 70
 contact: sonia.ribette@gmail.com
 formation: |
+    Solo: Voix sur bande son
     Duo: Guitare & voix
 interpretes: |
     Yann Ravet à la guitare
@@ -60,13 +61,19 @@ agenda:
     - date: 23/02/24
       lieu: Villenave d'Ornon (33)
 texte: |
-    Un spectacle inoubliable où la musique et le théâtre se rencontrent pour vous faire revivre les grands classiques des années 70.
-    De Bob Dylan à Stevie Wonder, de Pink Floyd à Bob Marley, des Beatles à Otis Redding, en passant par quelques perles de la chanson française, nous explorerons ensemble des morceaux qui ont traversé les époques et les cœurs.
-    Des titres que nous ré-interpréterons pour vous avec simplicité et justesse, dans une atmosphère chaleureuse, acoustique, toujours vivante.
-    Sonia et Yann vous embarqueront dans une aventure musicale unique. Vous serez les chefs d’orchestre et choisirez les chansons qu’ils interpréteront au fur et à mesure, créant ainsi un spectacle personnalisé et unique.
-    Grâce à votre aide, Sonia découvrira enfin la chanson parfaite pour le mariage de sa sœur.
-    Préparez-vous à chanter, rire et être émus. “Ma Sœur se Marie” est bien plus qu’un concert, c’est une expérience interactive et mémorable à ne pas manquer !
-    Ce spectacle s'adapte à votre budget et vos envies. Il peut aussi être joué en mode juke-box, et en solo.
+    Ma Sœur se Marie ! est un concert théâtralisé tendre, drôle et participatif, où le public devient acteur du spectacle. Rose cherche la chanson parfaite pour le mariage de sa sœur… et c’est vous qui l’aidez à la trouver en choisissant les chansons au fil de la représentation.
+
+    Chaque spectacle est unique : on chante, on rit, on s’émeut, parfois même on monte sur scène. Un décor épuré, quelques accessoires et beaucoup de complicité suffisent à créer un moment de partage chaleureux et inoubliable
+
+    <b>Deux formats sont possibles</b> :
+    
+    <span class="font-bold"><i class="fas fa-music"></i></span>&nbsp; En solo, sur bande son : un voyage à travers les grands classiques de la chanson française des années 30 à 60.
+
+    <span class="font-bold"><i class="fas fa-music"></i></span>&nbsp; En duo guitare / voix, avec Yann, guitariste exceptionnel, pilier musical du spectacle : une version acoustique autour des standards français et internationaux des années 70.
+
+    À la fin, une certitude : ensemble, vous trouverez la chanson idéale pour le mariage.
+
+    Ma Sœur se Marie !, ce n’est pas qu’un concert… c’est une expérience vivante, interactive et pleine d’émotion.
 ---
 
 {% extends "modeles/affiche-gauche.html" %}
