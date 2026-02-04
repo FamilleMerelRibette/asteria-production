@@ -23,6 +23,9 @@
             <p class="text-justify mt-10 mb-10">{{ texte | nl2br | safe }}</p>
             <p>{{ formation | nl2br | safe }}</p>
             <p>{{ interpretes | nl2br | safe }}</p>
+            {%- if instagram -%}<p class="mt-8">
+                <span class="font-bold"><i class="fa-brands fa-instagram"></i></span>&nbsp;<a href="https://www.instagram.com/{{ instagram }}">{{ instagram }}</a>
+            </p>{%- endif -%}
             <p class="mt-8">
                 <span class="font-bold"><i class="fas fa-envelope"></i></span
                 >&nbsp; {{ contact }}
@@ -105,6 +108,32 @@
             </div>
         </div>
     </div>
+    {%- elif youtubes -%}
+    {%- for elem in youtubes -%}
+    <div>
+        <h3 class="text-3xl font-bold mb-10 flex items-center gap-4">
+            En
+            <span class="font-bold uppercase">images</span>
+            <span
+                class="h-[3px] bg-gradient-to-r from-sky-500 via-pink-500 to-yellow-500 flex-grow mt-2"
+            ></span>
+        </h3>
+        <div class="flex justify-center">
+            <div class="w-4/5 relative" style="padding-bottom: 45%">
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="{{ elem }}"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+    {%- endfor -%}
     {%- endif -%} {%- if soundcloud -%}
     <div>
         <h3 class="text-3xl font-bold mb-10 flex items-center gap-4">
