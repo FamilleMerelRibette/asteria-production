@@ -5,7 +5,7 @@ draft: false
 affiche: media/slc.jpg
 youtube:
 soundcloud: https://api.soundcloud.com/playlists/2083344321
-type: Concert romancé - solo sur bande son
+type: Le journal de Rose - solo sur bande son
 repertoire: Jazz des années 30 à 50
 contact: sonia.ribette@gmail.com
 formation: "Chant: solo sur bande son"
