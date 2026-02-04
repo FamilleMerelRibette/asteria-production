@@ -109,8 +109,7 @@
         </div>
     </div>
     {%- elif youtubes -%}
-    {%- for elem in youtubes -%}
-    <div>
+    <div class="col-span-2">
         <h3 class="text-3xl font-bold mb-10 flex items-center gap-4">
             En
             <span class="font-bold uppercase">images</span>
@@ -118,8 +117,10 @@
                 class="h-[3px] bg-gradient-to-r from-sky-500 via-pink-500 to-yellow-500 flex-grow mt-2"
             ></span>
         </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+    {%- for elem in youtubes -%}
         <div class="flex justify-center">
-            <div class="w-4/5 relative" style="padding-bottom: 45%">
+            <div class="w-4/5 relative">
                 <iframe
                     width="100%"
                     height="315"
@@ -132,8 +133,9 @@
                 ></iframe>
             </div>
         </div>
-    </div>
     {%- endfor -%}
+    </div>
+    </div>
     {%- endif -%} {%- if soundcloud -%}
     <div>
         <h3 class="text-3xl font-bold mb-10 flex items-center gap-4">
