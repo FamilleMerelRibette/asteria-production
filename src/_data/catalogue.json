@@ -1,0 +1,41 @@
+{
+  "senior": [
+    {
+      "titre": "Yann & Sonia, du coeur et des notes",
+      "image": "media/yes.jpg",
+      "brochure": "brochures/yes.pdf"
+    },
+    {
+      "titre": "Voyage musical",
+      "image": "media/vm.jpg",
+      "brochure": "brochures/vm.pdf"
+    },
+    {
+      "titre": "Sous les cerisiers (Duo)",
+      "image": "media/slc-duo.jpg",
+      "brochure": "brochures/slc-duo-senior.pdf"
+    },
+    {
+      "titre": "Ma vie en rose",
+      "image": "media/mvr.jpg",
+      "brochure": "brochures/mvr.pdf"
+    }
+  ],
+  "tout_public": [
+    {
+      "titre": "Ma soeur se marie (Duo)",
+      "image": "media/msm-2025-duo.jpg",
+      "brochure": "brochures/msm-duo.pdf"
+    },
+    {
+      "titre": "Sous les cerisiers",
+      "image": "media/slc-collectif.jpg",
+      "brochure": "brochures/slc-collectif.pdf"
+    },
+    {
+      "titre": "Voyage musical",
+      "image": "media/vm.jpg",
+      "brochure": "brochures/vm.pdf"
+    }
+  ]
+}

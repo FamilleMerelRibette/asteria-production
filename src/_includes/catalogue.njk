@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Ce site est en français -->
+    <meta http-equiv="Content-Language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta -->
+    <meta name="description" content="{{ metadata.description }}" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ '/apple-touch-icon.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/favicon-32x32.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ '/favicon-16x16.png' | url }}"
+    />
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
+
+    <title>{{ title or metadata.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/site.css' | url }}" />
+    <link rel="stylesheet" href="/@fontsource/rubik/400.css" />
+    <link rel="stylesheet" href="/@fontsource/rubik/500.css" />
+    <link rel="stylesheet" href="/@fontsource/rubik/600.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+
+  <body class="font-sans leading-normal tracking-normal text-gray-900">
+    {% include "menu.njk" %}
+
+    <main id="main-content" class="max-w-7xl mx-auto px-6 pt-40">
+      <header class="mb-12">
+        <h1 class="text-5xl md:text-7xl font-['Squada_One'] uppercase tracking-wide">
+          Catalogue
+        </h1>
+        <p class="mt-4 text-lg text-gray-700">
+          Retrouvez nos spectacles classés par public. Chaque affiche donne acces a la plaquette PDF.
+        </p>
+      </header>
+
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="lg:border-r lg:border-gray-200 lg:pr-8">
+          <h2 class="text-3xl font-bold uppercase tracking-wide mb-6">Spectacles senior</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {% for item in catalogue.senior %}
+              {% if item.titre and item.image and item.brochure %}
+                <article class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
+                  <img
+                    src="/{{ item.image }}"
+                    alt="Affiche {{ item.titre }}"
+                    class="w-full h-auto object-cover"
+                    loading="lazy"
+                  >
+                  <div class="p-4 flex flex-col gap-3 grow">
+                    <a
+                      href="/{{ item.brochure }}"
+                      download
+                      class="inline-flex items-center justify-center rounded-md px-4 py-2 bg-gray-900 text-white font-medium hover:bg-gray-700 transition-colors duration-200"
+                    >
+                      En savoir plus
+                    </a>
+                  </div>
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="lg:border-r lg:border-gray-200 lg:pr-8">
+          <h2 class="text-3xl font-bold uppercase tracking-wide mb-6">Spectacles tout public</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {% for item in catalogue.tout_public %}
+              {% if item.titre and item.image and item.brochure %}
+                <article class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
+                  <img
+                    src="/{{ item.image }}"
+                    alt="Affiche {{ item.titre }}"
+                    class="w-full h-auto object-cover"
+                    loading="lazy"
+                  >
+                  <div class="p-4 flex flex-col gap-3 grow">
+                    <a
+                      href="/{{ item.brochure }}"
+                      download
+                      class="inline-flex items-center justify-center rounded-md px-4 py-2 bg-gray-900 text-white font-medium hover:bg-gray-700 transition-colors duration-200"
+                    >
+                      En savoir plus
+                    </a>
+                  </div>
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "footer.njk" %}
+  </body>
+</html>
