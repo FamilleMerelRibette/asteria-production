@@ -1,14 +1,14 @@
-<section id="composition" class="min-h-screen pt-20">
+<section id="musicotherapie" class="min-h-screen pt-20">
     <div class="container mx-auto px-6">
-        <h2 class="md:text-8xl text-6xl font-bold mb-2 font-['Squada_One'] uppercase">Composition</h2>
+        <h2 class="md:text-8xl text-6xl font-bold mb-2 font-['Squada_One'] uppercase">Musicothérapie</h2>
         <p class="text-xl text-gray-600 mb-12">
             Découvrez l'art de la composition musicale à travers nos créations originales.
         </p>
     </div>
 
-    {%- for composition in collections.compositions -%}
+    {%- for element in collections.musicotherapie -%}
     <div class="container mx-auto px-6 py-6 mt-10 mb-10">
-        {{ composition.content | safe }}
+        {{ element.content | safe }}
     </div>
     {%- endfor -%}
 

@@ -43,8 +43,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/styles/");
 
   // Collections
-  eleventyConfig.addCollection("compositions", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/compositions/*.md");
+  eleventyConfig.addCollection("musicotherapie", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/musicotherapie/*.md");
   });
   eleventyConfig.addCollection("spectacles", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/spectacles/*.md");

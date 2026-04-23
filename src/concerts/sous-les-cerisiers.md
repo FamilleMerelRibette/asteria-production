@@ -2,7 +2,7 @@
 titre: Sous les cerisiers
 slug: slc
 draft: false
-affiche: media/slc.jpg
+affiche: media/slc-collectif.jpg
 youtubes: 
   - https://www.youtube.com/embed/VPDSr20g28M?si=pwHfutmMw320RHj8
   - https://www.youtube.com/embed/Gqhz8mndWt0?si=w5ovnLBoPU2ElIrm
